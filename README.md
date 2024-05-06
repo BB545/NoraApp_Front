@@ -1,3 +1,7 @@
+## 공동 레포지토리 주소
+https://github.com/nora-app/golden-youth-front
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
