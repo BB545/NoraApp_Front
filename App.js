@@ -9,20 +9,22 @@ import { NavigationContainer } from '@react-navigation/native';
 const App = () => {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
-  const BottomTabScreen = () => {
-    return (
-        <Tab.Navigator>
-          <Tab.Screen name="Onboarding_1" component={Onboarding_1} />
-          <Tab.Screen name="Onboarding_2" component={Onboarding_2} />
-          <Tab.Screen name="Onboarding_3" component={Onboarding_3} />
-        </Tab.Navigator>
-    );
-  }
+  // const BottomTabScreen = () => {
+  //   return (
+  //       <Tab.Navigator>
+  //         <Tab.Screen name="Onboarding_1" component={Onboarding_1} />
+  //         <Tab.Screen name="Onboarding_2" component={Onboarding_2} />
+  //         <Tab.Screen name="Onboarding_3" component={Onboarding_3} />
+  //       </Tab.Navigator>
+  //   );
+  // }
 
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Bottom" component={BottomTabScreen} />
+        <Stack.Screen name="Onboarding_1" component={Onboarding_1} />
+        <Stack.Screen name="Onboarding_2" component={Onboarding_2} />
+        <Stack.Screen name="Onboarding_3" component={Onboarding_3} />
       </Stack.Navigator>
     </NavigationContainer>
   );

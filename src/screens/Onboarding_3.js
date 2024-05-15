@@ -3,7 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 
-const Onboarding_3 = () => {
+const Onboarding_3 = ({navigation}) => {
   return (
     <SafeAreaView style={{
       backgroundColor: '#ffffff'
@@ -14,6 +14,8 @@ const Onboarding_3 = () => {
             fontWeight: '900',
             color: '#000000',
             padding: 20,
+            marginTop: 100,
+            fontSize: 24
           }}>원하는 사람과 일대일로 이야기해요</Text>
         </View>
         <View>
@@ -21,6 +23,7 @@ const Onboarding_3 = () => {
             color: '#000000',
             paddingLeft: 20,
             paddingRight: 20,
+            fontSize: 19
           }}>쪽지 기능을 통해 원하는 사람과 친해지고, 
           서로 매일 안부를 확인해요</Text>
         </View>
@@ -31,7 +34,8 @@ const Onboarding_3 = () => {
             <Image source={require('../../assets/img/Onboarding3.png')}
             style={{
               width: '100%',
-              height: '83%',
+              height: '80%',
+              resizeMode: 'contain',
             }} />
           <TouchableOpacity style={{
             backgroundColor: 'orange',
@@ -40,9 +44,10 @@ const Onboarding_3 = () => {
             justifyContent: 'center',
             alignItems: 'center',
             position: 'fixed',
-            bottom: 155,
+            bottom: 170,
             borderRadius: 10,
-          }}>
+          }}
+          onPress={() => navigation.navigate('Onboarding_1')}>
             <Text style={{
               color: '#ffffff',
               fontSize: 20,
