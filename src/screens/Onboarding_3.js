@@ -47,7 +47,7 @@ const Onboarding_3 = ({navigation}) => {
             bottom: 170,
             borderRadius: 10,
           }}
-          onPress={() => navigation.navigate('Onboarding_1')}>
+          onPress={() => navigation.navigate('Signup_1')}>
             <Text style={{
               color: '#ffffff',
               fontSize: 20,
