@@ -48,7 +48,7 @@ const App = () => {
           options={{ title: '회원가입', headerLeft: () => <BackButton onPress={() => navigation.navigate('Signup_1')} /> }}
         />
         <Stack.Screen
-          name="Welcome"
+          name="Signup_3"
           component={Signup_3}
           options={{ title: '회원가입', headerLeft: () => <BackButton onPress={() => navigation.navigate('Signup_2')} /> }}
         />
