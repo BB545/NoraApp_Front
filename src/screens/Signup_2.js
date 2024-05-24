@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Icon, Image } from 'react-native-elements';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Signup_2 = ({navigation}) => {
+const Signup_2 = ({navigation, route}) => {
     const [nickname, setNickname] = useState('');
     const [isNicknameValid, setIsNicknameValid] = useState(null);
 
@@ -66,7 +66,7 @@ const Signup_2 = ({navigation}) => {
             <TouchableOpacity
                 style={[styles.button, isNicknameValid === true ? styles.buttonEnabled : styles.buttonDisabled]}
                 disabled={isNicknameValid !== true}
-                onPress={() => navigation.navigate('Signup_3')}
+                onPress={() => navigation.navigate('Signup_3', { nickname: nickname })}
             >
                 <Text style={styles.buttonText}>다음으로</Text>
             </TouchableOpacity>

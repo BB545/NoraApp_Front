@@ -2,11 +2,13 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const Signup_3 = ({ navigation }) => {
+const Signup_3 = ({ navigation, route }) => {
+    const { nickname } = route.params;
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#fff', width: '100%' }}>
             <Text style={styles.title}>황금청춘에 오신 것을 환영해요!</Text>
-            <Text style={styles.subtitle}>붉은노을님의 청춘을 응원합니다:)</Text>
+            <Text style={styles.subtitle}>{nickname}님의 청춘을 응원합니다:)</Text>
             <View style={styles.container}>
                 <Image
                     source={require('../../assets/img/Signup_3.png')}
@@ -24,8 +26,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        // justifyContent: 'center',
-        // padding: 20
         paddingLeft: 20,
         paddingRight: 20
     },
