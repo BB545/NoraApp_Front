@@ -28,15 +28,12 @@ const Onboarding_2 = ({navigation}) => {
         <View style={{
           alignItems: 'center',
           marginTop: 20,
-          // width: '100%'
-          // position: 'absolute'
         }}>
             <Image source={require('../../assets/img/Onboarding2.png')}
             style={{
               width: '100%',
               height: '80%',
               resizeMode: 'contain',
-              // objectFit: 'fill'
             }} />
           <TouchableOpacity style={{
             backgroundColor: 'orange',

@@ -29,7 +29,6 @@ const Onboarding_3 = ({navigation}) => {
         </View>
         <View style={{
           alignItems: 'center',
-          // marginTop: 10,
         }}>
             <Image source={require('../../assets/img/Onboarding3.png')}
             style={{

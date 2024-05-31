@@ -31,9 +31,6 @@ const Onboarding_1 = ({navigation}) => {
             fontSize: 19
           }}>자유롭게 회원님의 이야기를 들려주세요</Text>
         </View>
-        {/* <View style={{
-          height: 200
-        }}></View> */}
         <View style={{
           alignItems: 'center',
           marginTop: 80,

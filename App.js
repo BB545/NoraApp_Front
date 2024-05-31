@@ -40,7 +40,7 @@ const App = () => {
         <Stack.Screen
           name="Signup_1"
           component={Signup_1}
-          options={{ title: '회원가입', headerLeft: () => <BackButton onPress={() => navigation.navigate()} /> }}
+          options={{ title: '회원가입', headerLeft: () => <BackButton onPress={() => navigation.navigate('Onboarding_1')} /> }}
         />
         <Stack.Screen
           name="Signup_2"
